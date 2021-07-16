@@ -1,0 +1,110 @@
+.container{
+     background: green; 
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    float:right;
+     height: 100vh; 
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    /* works on our flex direction  */
+    align-items: flex-end;
+     /* work on cross-axis */
+   
+    
+}
+.container-body{
+    background: blue; 
+   /* display: flex; */
+   /* flex-direction: column; */
+   width: 75%;
+   float:left;
+    height: 100vh; 
+   /* flex-wrap: nowrap; */
+   /* justify-content:space-around; */
+   /* works on our flex direction  */
+   /* align-items: flex-end; */
+    /* work on cross-axis */
+  
+   
+}
+
+.container-body img{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.child-item{
+
+    background: red;
+    width: 100%;
+    /* height: 200px; */
+}
+.child-item img{
+    border: rgb(18, 14, 66) 3px solid;
+    width: 100%;
+    height: 200px;
+}
+
+.child-item:nth-child(1){
+    background: brown;
+    /* order : 2; */
+    /* flex-grow: 1; */
+    /* width: 100px; */
+    
+}
+
+.child-item:nth-child(2){
+    background: orange;
+    /* height: 30Vh;  */
+    /* order: 1; */
+    /* flex-grow: 1; */
+    /* width: 100px; */
+    /* align-self: flex-end; */
+
+}
+
+.child-item:nth-child(3){
+     /* height: 50px; */
+    background: blue;
+ /* flex-shrink: 10; */
+    /* order: 3; */
+    /* align-self:center; */
+}
+
+header {
+    background-color: rgb(18, 14, 66);
+    flex: 0 0 40px;
+    color: white;
+    
+    /* justify-content: center; */
+    padding: 20px;
+}
+header nav {
+    background-color: transparent;
+    
+}
+li{
+    display: inline;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+li a{
+    display: inline;
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+}
+
+.active{
+   
+    color: red;
+}
+header nav h1{
+    text-align: center;
+    font-size: 50px;
+}
